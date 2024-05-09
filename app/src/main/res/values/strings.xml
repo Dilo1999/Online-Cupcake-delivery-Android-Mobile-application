@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="button_text">Sign in</string>
+    <string name="Save_setting">Save</string>
+    <string name="button">Button</string>
+    <string name="save">Save</string>
+    <string name="Update">Update</string>
+    <string name="Password">Password</string>
+    <string name="Email">Email</string>
+
+</resources>

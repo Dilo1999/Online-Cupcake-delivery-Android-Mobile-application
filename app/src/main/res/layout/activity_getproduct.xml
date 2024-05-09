@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
+
+    <EditText
+        android:id="@+id/editTextProductName"
+        android:layout_width="321dp"
+        android:layout_height="58dp"
+        android:hint="Product Name"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHint="#DA1B47"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="321dp"
+        android:layout_height="58dp"
+        android:hint="Product Category"
+        android:inputType="text"
+        android:textColorHint="#FF5733"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.365" />
+
+    <EditText
+        android:id="@+id/editTextProductPrice"
+        android:layout_width="321dp"
+        android:layout_height="58dp"
+        android:hint="Product Price"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textColorHint="#DA1B47"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.249" />
+
+
+    <ImageView
+        android:id="@+id/imageViewProduct"
+        android:layout_width="198dp"
+        android:layout_height="182dp"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.757" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="135dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#DA1B47"
+
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+
+    <EditText
+        android:id="@+id/Offers"
+        android:layout_width="329dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="70dp"
+        android:ems="10"
+        android:hint="Offers"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHint="#DA1B47"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewProduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/chooseImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="21dp"
+        android:backgroundTint="#DA1B47"
+        android:text="Choose Image"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewProduct"
+        app:layout_constraintTop_toBottomOf="@+id/Offers" />
+
+    <Button
+        android:id="@+id/uploadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="136dp"
+        android:backgroundTint="#DA1B47"
+        android:text="Upload Image"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/imageViewProduct"
+        app:layout_constraintTop_toBottomOf="@+id/chooseImageButton"
+        app:layout_constraintVertical_bias="0.358" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="125dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="142dp"
+        android:text="Please after you choose image then press upload button before save button to upload the picture"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewProduct"
+        app:layout_constraintTop_toBottomOf="@+id/uploadImage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

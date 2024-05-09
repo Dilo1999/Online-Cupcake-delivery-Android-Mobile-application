@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
+
+    <EditText
+        android:id="@+id/updateTextProductName"
+        android:layout_width="321dp"
+        android:layout_height="58dp"
+        android:hint="Product Name"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHint="#DA1B47"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <Spinner
+        android:id="@+id/updatespinner"
+        android:layout_width="321dp"
+        android:layout_height="58dp"
+        android:hint="Product Category"
+        android:inputType="text"
+        android:textColorHint="#FF5733"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.365" />
+
+    <EditText
+        android:id="@+id/updateTextProductPrice"
+        android:layout_width="321dp"
+        android:layout_height="58dp"
+        android:hint="Product Price"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textColorHint="#DA1B47"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.249" />
+
+
+    <ImageView
+        android:id="@+id/updateimageViewProduct"
+        android:layout_width="198dp"
+        android:layout_height="182dp"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.757" />
+
+    <Button
+        android:id="@+id/updatebuttonSave"
+        android:layout_width="135dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#DA1B47"
+
+        android:text="@string/Update"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+
+    <EditText
+        android:id="@+id/updateOffers"
+        android:layout_width="329dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="70dp"
+        android:ems="10"
+        android:hint="Offers"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHint="#DA1B47"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewProduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updatespinner"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/updatechooseImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#DA1B47"
+        android:text="Choose Image"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewProduct"
+        app:layout_constraintTop_toBottomOf="@+id/updateOffers" />
+
+    <Button
+        android:id="@+id/updateuploadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="136dp"
+        android:backgroundTint="#DA1B47"
+        android:text="Upload Image"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/updatebuttonSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/updateimageViewProduct"
+        app:layout_constraintTop_toBottomOf="@+id/updatechooseImageButton"
+        app:layout_constraintVertical_bias="0.358" />
+
+    <TextView
+        android:id="@+id/updatetextView3"
+        android:layout_width="134dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="142dp"
+        android:text="Please re-upload picture"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toEndOf="@+id/updateimageViewProduct"
+        app:layout_constraintTop_toBottomOf="@+id/updateuploadImage"
+        app:layout_constraintVertical_bias="0.34" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="260dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="197dp"
+        android:layout_height="258dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/idIVCourseImage"
+                    android:layout_width="165dp"
+                    android:layout_height="122dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/asdf"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/idTVCourseName"
+                    android:layout_width="142dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Stawberry cupcake"
+                    android:textAlignment="center"
+                    android:textColor="#282828"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:translationX="-12dp"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/idIVCourseImage" />
+
+                <Button
+                    android:id="@+id/cartbutton"
+                    android:layout_width="40dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="144dp"
+                    android:layout_marginBottom="12dp"
+                    android:backgroundTint="#DA1B47"
+                    android:contentDescription="cart"
+                    android:padding="@dimen/cardview_compat_inset_shadow"
+                    android:text="+"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:translationX="130dp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/offer"
+                    android:layout_width="157dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="44dp"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/idTVCourseName"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="74dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="13dp"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/offer"
+                    app:layout_constraintVertical_bias="1.0" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

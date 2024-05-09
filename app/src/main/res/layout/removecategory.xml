@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/categorytoremovebtn"
+        android:layout_width="300dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="120dp"
+        android:background="@drawable/textoutline"
+        android:backgroundTint="#DA1B47"
+        android:text="Remove Category"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerremovecat" />
+
+    <Spinner
+        android:id="@+id/spinnerremovecat"
+        android:layout_width="300dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="111dp"
+        android:singleLine="true"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/updatecat"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="110dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categorytoremovebtn" />
+
+    <Button
+        android:id="@+id/categorytoupdatebtn"
+        android:layout_width="300dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/textoutline"
+        android:backgroundTint="#DA1B47"
+        android:text="Update Category"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updatecat" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
